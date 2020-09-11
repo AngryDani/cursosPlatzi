@@ -147,3 +147,25 @@ function pais(nombre, comida){
 var peru = new pais("Perú", "Ceviche"); //asignando los valores
 
 var mexico = new pais("Mexico", "Pocholo");
+
+
+// RECORRER ARRAYS::
+
+
+// pagina que sirve consola para JavaScript::
+// https://jsconsole.com/
+
+var libros=[
+    {nombre: "Estrategia", paginas: 800},
+    {nombre: "Historia", paginas:300},
+    {nombre: "Matematicas", paginas: 150},
+    {nombre: "Ciencia Politica", paginas: 600},
+    {nombre: "Coquito", paginas: 50},
+    {nombre: "Biblia", paginas:1900},
+];
+
+// método para filtrar::
+
+var libros_filtrados= libros.filter(function(libros){
+    return libros.paginas<=200
+});
