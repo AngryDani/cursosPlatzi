@@ -135,3 +135,15 @@ var libro = { // los objetos se manejan en propiedads palabra_clave = valor [dic
 
 libro.metodo(); //:: El libro Estrategia tiene 200 paginas y fue escrita por Fulano
 
+// Objects y su función constructora::
+
+function pais(nombre, comida){
+    this.nombre= nombre;
+    this.comida= comida;
+}
+
+// crear una variable según la función constructora::
+
+var peru = new pais("Perú", "Ceviche"); //asignando los valores
+
+var mexico = new pais("Mexico", "Pocholo");
