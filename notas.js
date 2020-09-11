@@ -116,3 +116,22 @@ while(nombres.length>0){
     var nombre= nombres.shift();
     saludar(nombre);
 }
+
+
+// OBJECTS:: 
+
+// todo objeto es una variable::
+
+var libro = { // los objetos se manejan en propiedads palabra_clave = valor [diccionaron en Python]
+    paginas: 200,
+    nombre: "Estrategia", // es coma y no punto y coma
+    autor: "Fulano",
+    metodo: function(){
+        console.log(`El libro ${this.nombre} tiene ${this.paginas} paginas y fue escrita por ${this.autor}`)
+    }
+}
+
+// llamar al método del objeto::
+
+libro.metodo(); //:: El libro Estrategia tiene 200 paginas y fue escrita por Fulano
+
