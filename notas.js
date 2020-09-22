@@ -169,3 +169,18 @@ var libros=[
 var libros_filtrados= libros.filter(function(libros){
     return libros.paginas<=200
 });
+
+// MÉTODO FIND()
+
+var libro_nombre = libros.find(function(libros){
+    return libros.nombre === "Historia";
+});
+
+// MÉTODO FOREACH()
+libros.forEach(function(libros){
+    console.log(libros.nombre);
+});
+
+// MÉTODO .SOME()
+
+var 
