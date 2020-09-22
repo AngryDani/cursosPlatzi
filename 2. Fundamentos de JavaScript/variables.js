@@ -31,3 +31,26 @@ var nombre_largo= "DanAngryDaniOggy2000";
 console.log(`El nombre largo es: ${nombre_largo}, pero solo queremos AngryDani, entonces usamos substr()`);
 console.log("Estás usando la función substr()");
 console.log(nombre_largo.substr(3,9));
+
+
+
+// VARIABLES NÚMEROS
+// Aumentar en un valor numérico --> += #número a aumentar
+// Disminuir en un valor numérico --> -= #número a disminuir
+var edad=24;
+console.log(`Tu edad el año pasado era de ${edad} años`);
+console.log("Vamos a aumentar en 1 para el año actual!");
+console.log(`Tu edad actual es ${edad+=1}`);
+
+// Usando el módulo Math para redondear
+
+var television= 1239;
+var cuotas= 5;
+var mensualidad= Math.round(television/cuotas).toFixed(2);
+console.log(`El precio del TV es: ${television} y se plantea pagarla en ${cuotas} mensuales.\nPor ende tu cuota mensual es de: ${mensualidad} soles en 5 meses.\nGracias!`);
+
+
+
+
+
+
