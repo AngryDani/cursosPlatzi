@@ -170,7 +170,7 @@ var libros_filtrados= libros.filter(function(libros){
     return libros.paginas<=200
 });
 
-// MÉTODO FIND()
+// MÉTODO FIND() devuelve true o false
 
 var libro_nombre = libros.find(function(libros){
     return libros.nombre === "Historia";
@@ -181,6 +181,19 @@ libros.forEach(function(libros){
     console.log(libros.nombre);
 });
 
-// MÉTODO .SOME()
+// MÉTODO .SOME() devuelve true o false
 
-var 
+libros.some(function(libros){
+    return libros.paginas > 300;
+});
+
+// Eliminando elementos de un Array
+
+// PUSH()
+
+var frutas= [
+    "plátano",
+    "manzana",
+    "uva",
+    "mandarina"
+];
