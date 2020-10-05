@@ -3,7 +3,8 @@
 Dan={
     name: "Alvaro",
     edad: 25,
-    game: "csgo"
+    game: "csgo",
+    peso: 72
 }
 
 Meepo={
@@ -44,6 +45,42 @@ function mayorEdad(persona){
     }
 }
 
-mayorEdad(Dan)
+// mayorEdad(Dan)
 
-mayorEdad(Meepo)
+// ayorEdad(Meepo)
+
+// Estructuras repetitivas: FOR
+
+
+console.log(`${Dan.name} empezó pesando: ${Dan.peso} kg`)
+
+// funciones::
+
+/* const AUMENTAR_PESO = (persona) => {
+    persona.peso += 200; 
+}
+*/
+
+// la función es equivalente a la anterior::
+
+const PESO_VARIABLE = 0.2;
+
+const AUMENTAR_PESO = persona => persona.peso += PESO_VARIABLE;
+
+const BAJAR_PESO = persona => persona.peso -= PESO_VARIABLE;
+
+
+for (var i = 1; i <= 365; i++) {
+    var random = Math.random() // 0 - 1
+
+    if (random < 0.25){
+        // aumentar de peso::
+        AUMENTAR_PESO(Dan);
+    } else if (random < 0.5) {
+        // bajar de peso
+        BAJAR_PESO(Dan);
+    }
+}
+
+
+console.log(`${Dan.name} terminó pesando: ${Dan.peso.toFixed(2)} kg`);
