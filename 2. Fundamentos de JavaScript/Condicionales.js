@@ -52,7 +52,7 @@ function mayorEdad(persona){
 // Estructuras repetitivas: FOR
 
 
-console.log(`${Dan.name} empezó pesando: ${Dan.peso} kg`)
+
 
 // funciones::
 
@@ -69,18 +69,53 @@ const AUMENTAR_PESO = persona => persona.peso += PESO_VARIABLE;
 
 const BAJAR_PESO = persona => persona.peso -= PESO_VARIABLE;
 
+function pesoRandom(){
+    console.log(`${Dan.name} empezó pesando: ${Dan.peso} kg`);
 
-for (var i = 1; i <= 365; i++) {
-    var random = Math.random() // 0 - 1
+    for (var i = 1; i <= 365; i++){
+        var random = Math.random() // entre 0 - 1
 
-    if (random < 0.25){
-        // aumentar de peso::
-        AUMENTAR_PESO(Dan);
-    } else if (random < 0.5) {
-        // bajar de peso
-        BAJAR_PESO(Dan);
+        if (random < 0.25){
+            AUMENTAR_PESO(Dan);
+        } else if (random < 0.5){
+            BAJAR_PESO(Dan);
+        }
     }
+    console.log(`${Dan.name} terminó pesando: ${Dan.peso.toFixed(2)} kg`);
 }
 
+// pesoRandom();
 
-console.log(`${Dan.name} terminó pesando: ${Dan.peso.toFixed(2)} kg`);
+
+// CICLOS WHILE:: 
+
+const META_PESO = Dan.peso + 4;
+
+const GYM = () => Math.random() < 0.31;
+const EATING= () => Math.random() < 0.15;
+const NO_EATING= () => Math.random() < 0.05;
+
+var dias= 0;
+
+console.log(`${Dan.name} empezó pesando: ${Dan.peso} kg`);
+while (Dan.peso < META_PESO){
+    if (GYM()){
+        AUMENTAR_PESO(Dan);
+    }
+    if (EATING()){
+        AUMENTAR_PESO(Dan);
+    }
+    if (NO_EATING()){
+        BAJAR_PESO(Dan);
+    }
+    dias += 1;
+}
+console.log(`${Dan.name} terminó pesando: ${Dan.peso.toFixed(2)} kg\nEn ${dias} días!`);
+
+
+
+
+
+
+
+
