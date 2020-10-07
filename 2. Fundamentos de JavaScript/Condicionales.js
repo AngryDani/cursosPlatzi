@@ -113,6 +113,27 @@ while (Dan.peso < META_PESO){
 console.log(`${Dan.name} terminó pesando: ${Dan.peso.toFixed(2)} kg\nEn ${dias} días!`);
 
 
+// CICLO DO-WHILE
+
+var contador=0;
+
+const llueve = () => Math.random() < 0.25;
+
+do{
+    contador++;
+} while(!llueve())
+if (contador > 1){
+    console.log(`Fui a ver si llovía ${contador} veces!`);
+} else{
+    console.log(`Fui a ver si llovía ${contador} vez!`);
+}
+
+/*
+OTRA FORMA
+console.log(`fui a ver si llovia ${contador} ${contador > 1 ? 'veses' : 'vez'} `);
+
+*/
+
 
 
 
