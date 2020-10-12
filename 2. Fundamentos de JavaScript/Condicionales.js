@@ -134,6 +134,23 @@ console.log(`fui a ver si llovia ${contador} ${contador > 1 ? 'veses' : 'vez'} `
 
 */
 
+// CONDICIONAL: SWITCH
+
+var name_autoriced = prompt('Cuál es tu nombre? :');
+
+switch (name_autoriced){
+    case 'angrydani':
+        console.log("Nick autorizado, puede jugar!")
+        break
+    case 'oggy2000':
+        console.log("Nick autorizado, puede jugar!")
+        break
+    case 'angrydan':
+        console.log("Nick autorizado, puede jugar!")
+        break
+    default:
+        console.log("Nick NO autorizado, NO puede jugar!!!")
+}
 
 
 
